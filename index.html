@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="language" content="pt-BR">
+<title>Layout Responsivo</title>
+<!---adicionando o jake-->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<!--adicionando o css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--media-->
+<link rel="stylesheet" type="text/css" href="media.css" media="screen">
+</head>
+
+<body>
+    
+    <main id="principal">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    <li><a href="quemsomos.html">Quem Somos</a>
+                    <li><a href="galeria.html">Galeria</a>
+                    <li><a href="contato.html">Contato</a>
+                
+                </ul><!-- unordered list - lista não ordenanda / 
+                    <o1></o1> ordenada lista-->
+             </nav>
+        </header><!--end header-->
+        <section><!doctype html>
+            <html>
+            <head>
+            <meta charset="utf-8"> 
+            <meta name="language" content="pt-BR">
+            <title>Formulários html</title>
+            <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <!-- link do css responsivo -->
+            <link rel="stylesheet" type="text/css" href="css/media.css" media="screen">
+            <style type="text/css">
+                
+                input {
+                border: 3px solid #F2D230;
+                color: #03738C;
+                font-size: 12px;
+                height: 30px;
+                background-color: #FF9;
+                font-family: verdana;
+            
+            }
+            textarea {
+                border: 3px solid #F2C438;
+                color: #03738C;
+                background-color: #FF9;
+            }
+            .btn {
+                color: #03738C;
+                border: 2px dotted #F2C438;
+                font-weight: bolder;
+                width: 80px;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 10px;
+            
+                
+            }
+            label{width: 200px; line-height: 30px; margin-right: 150px; display: block; font-family: verdana;}
+            fieldset{padding: 15px; margin: 10px; border-color: #14beff; font-family: verdana;}
+            
+            </style>
+            </head>
+            <body>
+                <form name="form_contato" method="post" action="php/recebe_dados.php"><!-- métodos post e get (usar post) https://www.w3schools.com/html/html_forms_attributes.asp -->
+                    <fieldset>
+                <legend>Formulário:</legend>
+                    <p>
+                        <label>Nome: *</label>
+                        <input type="text" name="nome" id="nome" size="50" placeholder="Digite seu nome" required autofocus maxlength="50">
+                    </p>
+                    <p>
+                        <label>Sobrenome: *</label>
+                        <input type="text" name="sobrenome" id="sobrenome" size="50" placeholder="Digite seu sobrenome" required autofocus maxlength="60">
+                    </p>
+                    <p>
+                        <label>E-mail: *</label>
+                        <input type="email" name="email" id="email" size="50" placeholder="Digite seu e-mail" required autofocus maxlength="60">
+                    </p>
+                    <p>
+                        <label>Site: *</label>
+                        <input type="url" name="url" id="url" size="50" placeholder="Digite seu site (se tiver)" autofocus maxlength="60">
+                    </p>
+                    <p>
+                        <label>Telefone: *</label>
+                        <input type="tel" name="tel" id="tel" size="50" placeholder="xx-xxxxx-xxxx" autofocus pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"><!-- https://www.w3schools.com/html/html_form_attributes.asp-->
+                    </p>
+                    <p>
+                        <label>Senha: *</label>
+                        <input type="password" name="password" id="password" size="50" placeholder="Digite sua senha (11 91234-1234)" required autofocus maxlength="60">
+                    </p>
+                    <p>
+                        <label>Cor: *</label>
+                        <input type="color" name="color" id="color" required>
+                    </p>
+                    <p>
+                        <label>Número: *</label>
+                        <input type="number" name="number" id="number" min="1" max="5" required>
+                    </p>
+                    <p>
+                        <label>Digite sua mensagem: *</label>
+                        <textarea name="texto" id="texto" maxlength="250" rows="10" cols="50"></textarea> 
+                    </p>
+                    <p>	
+                    <!-- referências de inputs https://www.w3schools.com/html/html_form_input_types.asp -->		
+            
+                    <label for="cars">Hobbie:</label>
+                      <select id="cars" name="cars">
+                            <option value="volvo">Ler</option>
+                            <option value="saab">Cozinhar</option>
+                        <option value="fiat">Arte</option>
+                        <option value="audi">Outro</option>
+                      </select>
+              <br><br><br>
+                     <label for="vehicle1"> Eu tenho uma bike</label><br>
+                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle2"> Eu tenho um carro</label><br>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                     <label for="vehicle3"> Eu tenho um barco</label><br>
+                     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><br><br>
+            <!--https://www.w3schools.com/html/html_form_elements.asp -->
+            <br>
+            
+            <input type="file"  name="file" id="file" size="50">
+            
+            <br><br><br>
+                        <input class="btn" type="submit" name="enviar" id="enviar" size="20" value="ENVIAR">
+                        <input class="btn" type="reset" name="reset" id="reset" size="20" value="LIMPAR">
+                    </p>
+                    </fieldset>
+                </form>
+            
+            </section><!--end section-->
+        <aside></aside><!--end aside-->
+        <footer></footer><!--end footer-->
+    </main><!--#principal-->
+    
+</body>
+</html>
