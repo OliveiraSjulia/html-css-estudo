@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://getbootstrap.com.br/favicon.ico">
+
+    <title>Template Bootstrap Básico - Layout</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	/*div{border: 1px solid #ccc;}*/
+  	.tamanho{width: 40%;}
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      /* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+    </style>
+</head>
+<body>
+
+<main role="main"><!-- principal -->
+
+ 
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu fixo meu logotipo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+       </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Título do Layout</h1>
+			<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+			<p>Use-o como um ponto de partida para algo mais peculiar.</p>
+			<p><a href="" class="btn btn-primary btn-lg">Saiba Mais</a></p>
+		</div><!-- fecha .container -->
+	</div><!-- fecha .jumbotron -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="rounded-circle tamanho mx-auto d-block" src="img/jake.png">
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-secondary">Saiba Mais</a></p>
+			</div><!-- fecha col-md-4 -->
+			<div class="col-md-4">
+				<img class="rounded-circle tamanho mx-auto d-block" src="img/40 Savage Memes To Keep You Laughing.jpg">
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-outline-secondary">Saiba Mais</a></p>
+			</div>
+			<div class="col-md-4">
+				<!-- gambiarra -->
+				<p style="text-align: center;">
+					<img class="rounded-circle tamanho" src="img/jake.png">
+				</p>
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-secondary">Saiba Mais</a></p>
+			</div>
+		</div>
+	</div><!-- fecha .container2 -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="rounded-circle tamanho mx-auto d-block" src="img/jake.png">
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-secondary">Saiba Mais</a></p>
+			</div><!-- fecha col-md-4 -->
+			<div class="col-md-4">
+				<img class="rounded-circle tamanho mx-auto d-block" src="img/jake.png">
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-outline-secondary">Saiba Mais</a></p>
+			</div>
+			<div class="col-md-4">
+				<!-- gambiarra -->
+				<p style="text-align: center;">
+					<img class="rounded-circle tamanho" src="img/jake.png">
+				</p>
+				<h1>Título</h1>
+				<p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. </p>
+				<p><a href="" class="btn btn-secondary">Saiba Mais</a></p>
+			</div>
+		</div>
+	</div><!-- fecha .container3 -->
+	<footer class="container bg-dark text-white"><p>Proa | Profª Marta Roberta Teles 2021&reg;</p></footer>
+	
+</main><!-- fecha principal -->
+
+</body>
+</html>
